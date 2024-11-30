@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Noël</title>
+    <style>
+        /* Général */
+        body {
+            font-family: 'Pacifico', cursive, 'Arial', sans-serif;
+            background-image: url(/images/Green\ And\ Red\ Playful\ Christmas\ Background\ Your\ Story.png);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header festif */
+        #header99 {
+            background-color: transparent;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: none;
+        }
+
+        #header99 h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            text-shadow: none;
+            margin: 0;
+        }
+
+        /* Vidéo de fond */
+        #background-video-container {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            overflow: hidden;
+        }
+
+        #background-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Carte de bienvenue */
+        #welcome-card99 {
+            background: #ffffff;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 90%;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            animation: float99 4s ease-in-out infinite;
+        }
+
+        @keyframes float99 {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        #welcome-card99 h1 {
+            font-size: 1.8rem;
+            color: #d92027;
+            text-shadow: 1px 1px 2px rgba(255, 204, 0, 0.5);
+        }
+
+        #welcome-card99 p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Section des événements */
+        #events99 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 15px;
+        }
+
+        .event-card99 {
+            display: flex;
+            flex-direction: column;
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event-card99:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .event-card99 img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .description99 {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .description99 h2 {
+            font-size: 1.2rem;
+            color: #d92027;
+            margin: 0 0 10px 0;
+        }
+
+        .description99 p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Confettis */
+        #confetti-container99 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .confetti99 {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: hsl(50, 70%, 60%);
+            border-radius: 50%;
+            animation: fallConfetti99 4s linear infinite;
+        }
+
+        @keyframes fallConfetti99 {
+            0% {
+                transform: translateY(-100px) translateX(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) translateX(50px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive */
+        @media (min-width: 768px) {
+            #header99 h1 {
+                font-size: 3rem;
+            }
+
+            #welcome-card99 h1 {
+                font-size: 2rem;
+            }
+
+            #events99 {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .event-card99 {
+                flex-direction: row;
+                max-width: 45%;
+            }
+
+            .event-card99 img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .description99 {
+                text-align: left;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            #background-video-container {
+                height: 90vh;
+            }
+
+            #welcome-card99 {
+                max-width: 800px;
+                padding: 25px;
+            }
+
+            #events99 {
+                gap: 30px;
+            }
+
+            .event-card99 {
+                max-width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header99">
+        <h1>Allon fèt Noël enssemble, c’est quoi zot i dit 😉</h1>
+    </header>
+
+    <!-- Vidéo de fond -->
+    <div id="background-video-container">
+        <video autoplay loop muted playsinline id="background-video">
+            <source src="/images/Doré Noël Fêtes Sapin Vidéo Instagram Story.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+    </div>
+
+    <!-- Conteneur des confettis -->
+    <div id="confetti-container99"></div>
+
+
+<!--  Barrière limitation citation défit  -->
+
+    
+<style>
+    /* Style général */
+   
+
+
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      color: #333;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Section containers */
+    section {
+      background: linear-gradient(135deg, #ffe4b5, #ffcccb);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #ff4500;
+      margin-bottom: 20px;
+      font-family: 'Pacifico', cursive;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 15px;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.7);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    ul li:hover {
+      transform: scale(1.02);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .time-display {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .time-display span {
+      font-size: 0.9rem;
+      color: #ff4500;
+    }
+
+    button.delete {
+      background-color: transparent;
+      border: none;
+      color: #ff0000;
+      font-size: 1.2rem;
+      cursor: pointer;
+      opacity: 0.8;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    button.delete:hover {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+
+    button.delete.disabled {
+      cursor: not-allowed;
+      color: gray;
+    }
+
+    button.delete.disabled:hover {
+      transform: none;
+    }
+
+    .description-list li {
+      background: linear-gradient(145deg, #f9f3f0, #e4dad4);
+      border: 2px dashed #ff4500;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1rem;
+    }
+
+    .description-list li:hover {
+      background: linear-gradient(145deg, #ffefd5, #ffe4b5);
+      transform: scale(1.03);
+      transition: all 0.2s ease-in-out;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+
+ 
+  <main>
+    <section id="citations77">
+      <h2>✨ Citations de Noël ✨</h2>
+      <ul id="citations-list77"></ul>
+    </section>
+    <section id="defis77">
+      <h2>🎁 Défis de Noël 🎁</h2>
+      <ul id="defis-list77"></ul>
+    </section>
+    <section id="description77">
+      <h2>📣 Description - Annonce 📣</h2>
+      <ul id="description-list77" class="description-list"></ul>
+    </section>
+
+
+    <section id="rules-section">
+        <!-- Bloc 1 : Règles -->
+        <div class="rule-card">
+            <h2>📜 Règle :</h2>
+            <p>
+                Accomplissez les défis pour grimper au classement et décrocher un cadeau !<br>
+                Chaque point gagné vous rapporte des jetons :
+            </p>
+            <ul>
+                <li>1 point = 1 jeton bleu 🔵</li>
+                <li>2 points = 1 jeton jaune 🟡</li>
+                <li>3 points = 1 jeton vert 🟢</li>
+            </ul>
+            <p>
+                Les points sont attribués en fonction de la difficulté des défis : 
+                il y aura des défis simples, accessibles à tous, 
+                et des défis plus difficiles pour les plus ambitieux. À vous de jouer !
+            </p>
+        </div>
+    
+        <!-- Bloc 2 : Comment valider un défi -->
+        <div class="rule-card">
+            <h2>🎯 Comment valider un défi ?</h2>
+            <ol>
+                <li>📸 <strong>Étape 1 :</strong> Prenez des photos ou vidéos si le défi le demande.</li>
+                <li>✉️ <strong>Étape 2 :</strong> Envoyez vos preuves en message privé 📩 ou publiez-les directement dans le groupe Babyfoot ⚽.</li>
+            </ol>
+            <p>
+                🕵️‍♂️ <strong>Je vérifierai vos preuves</strong> et validerai le défi <span style="color:green;">✅</span> ou <span style="color:red;">❌</span> selon leur conformité.<br>
+                ⚠️ <strong>Attention :</strong> Toute tentative de triche 🚫 entraînera une perte de points 🔻.<br>
+                💪 Jouez honnêtement et relevez les défis avec fair-play pour viser la victoire 🏆 !
+            </p>
+        </div>
+    </section>
+    
+    <style>
+        /* Section globale */
+        #rules-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            background: #ffe4b5;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    
+        /* Cartes des règles */
+        .rule-card {
+            background: white;
+            border: 2px dashed #ff4500;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), -3px -3px 6px rgba(255, 255, 255, 0.7);
+            animation: floatCard 4s ease-in-out infinite;
+        }
+    
+        .rule-card:hover {
+            transform: scale(1.02);
+            transition: transform 0.2s ease-in-out;
+        }
+    
+        /* Animations */
+        @keyframes floatCard {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+    
+        /* Titre et contenu */
+        h2 {
+            color: #ff4500;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+    
+        p {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+    
+        ul, ol {
+            list-style-position: inside;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+    
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+    </style>
+    
+    
+    <!-- section admin -->
+    <section id="admin77">
+      <h2>🔒 Administration 🔒</h2>
+      <form id="login-form77">
+        <label for="username77">Utilisateur :</label>
+        <input type="text" id="username77" placeholder="Nom d'utilisateur" required>
+        <label for="password77">Mot de passe :</label>
+        <input type="password" id="password77" placeholder="Mot de passe" required>
+        <button type="submit">Se connecter</button>
+      </form>
+      <div id="admin-panel77" class="hidden">
+        <form id="add-item-form77" class="form-section">
+          <label for="type77">Type :</label>
+          <select id="type77">
+            <option value="citation">Citation</option>
+            <option value="defi">Défi</option>
+          </select>
+          <label for="content77">Contenu :</label>
+          <textarea id="content77" placeholder="Votre texte ici..." required></textarea>
+          <label for="color77">Couleur :</label>
+          <input type="color" id="color77" value="#000000">
+          <label for="date77">Date de fin :</label>
+          <input type="datetime-local" id="date77" required>
+          <button type="submit">Ajouter</button>
+        </form>
+        <form id="add-description-form77" class="form-section">
+          <label for="description77">Ajouter une description :</label>
+          <textarea id="description-content77" placeholder="E.g., Eddy a réalisé un défi..." required></textarea>
+          <button type="submit">Ajouter la description</button>
+        </form>
+      </div>
+    </section>
+
+    <!--  Barrière limitation début classement   -->
+
+
+
+<title>Classement de Noël 🎄</title>
+<style>
+    /* Styles généraux */
+    h1 {
+        color: #d63447;
+        text-align: center;
+        font-family: 'Georgia', serif;
+        text-shadow: 2px 2px 5px #fff;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #d63447;
+        color: #fff;
+    }
+
+    td {
+        border: 1px solid #ddd;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    tr:nth-child(even) {
+        background-color: #fffae6;
+    }
+
+    .jeton777 {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 5px;
+        animation: float777 2.5s ease-in-out infinite; /* Ajout de l'animation */
+    }
+
+    .vert777 { background-color: #28a745; }
+    .jaune777 { background-color: #ffc107; }
+    .bleu777 { background-color: #007bff; }
+
+    /* Animation pour les jetons */
+    @keyframes float777 {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .form-container777 {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group777 {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input, select, button {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    button {
+        background-color: #d63447;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #ad2e3a;
+    }
+
+    #authForm777 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #resetBtn777 {
+        margin-top: 20px;
+        display: none;
+    }
+
+    .admin-actions777 {
+        display: none;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+        body {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        table {
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            padding: 8px;
+        }
+
+        .form-container777 {
+            padding: 15px;
+        }
+
+        input, select, button {
+            font-size: 14px;
+            padding: 8px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        table {
+            display: block;
+            overflow-x: auto;
+        }
+
+        th, td {
+            padding: 5px;
+            font-size: 0.8rem;
+        }
+
+        .form-container777 {
+            padding: 10px;
+        }
+
+        input, select, button {
+            font-size: 12px;
+            padding: 6px;
+        }
+
+        button {
+            font-size: 12px;
+        }
+    }
+</style>
+<h1>🎄 Classement de Noël 🎄</h1>
+
+<div id="authForm777">
+    <input type="password" id="adminPassword777" placeholder="Mot de passe administrateur">
+    <button onclick="authenticate777()">Se connecter</button>
+</div>
+
+<table id="friendsTable777">
+    <thead>
+        <tr>
+            <th>Classement</th>
+            <th>Nom</th>
+            <th>Points</th>
+            <th>Jetons</th>
+            <th class="admin-actions777">Actions</th>
+        </tr>
+    </thead>
+    <tbody id="friendsList777"></tbody>
+</table>
+
+<div class="form-container777 admin-actions777">
+    <div class="form-group777">
+        <label for="selectFriend777">Sélectionnez un membre :</label>
+        <select id="selectFriend777"></select>
+    </div>
+    <div class="form-group777">
+        <label for="pointsInput777">Nombre de points à modifier :</label>
+        <input type="number" id="pointsInput777" placeholder="Entrez les points" min="0">
+    </div>
+    <button onclick="addPoints777()">Ajouter les Points</button>
+    <button onclick="removePoints777()">Retirer les Points</button>
+</div>
+
+<div id="resetBtn777">
+    <button onclick="resetData777()">Réinitialiser les Données</button>
+</div>
+
+<script>
+    let isAdmin777 = false;
+    const adminPassword777 = "fépetdoro974";
+
+    let friends777 = JSON.parse(localStorage.getItem('friends777')) || [
+        { name: '🎅 Azmiya', points: 0 },
+        { name: '🎅 Baptiste', points: 0 },
+        { name: '🎅 Chloé', points: 0 },
+        { name: '🎅 Cylian', points: 0 },
+        { name: '🎅 Eddy', points: 0 },
+        { name: '🎅 Lauriane', points: 0 },
+        { name: '🎅 Loane', points: 0 },
+        { name: '🎅 Loriane', points: 0 },
+        { name: '🎅 Mahé', points: 0 },
+        { name: '🎅 Marion', points: 0 },
+        { name: '🎅 Maxens', points: 0 },
+        { name: '🎅 Tifanny', points: 0 },
+        { name: '🎅 Zahidah', points: 0 }
+    ];
+
+    const saveData777 = () => {
+        localStorage.setItem('friends777', JSON.stringify(friends777));
+    };
+
+    const resetData777 = () => {
+        if (isAdmin777 && confirm('Voulez-vous réinitialiser toutes les données ?')) {
+            localStorage.removeItem('friends777');
+            location.reload();
+        }
+    };
+
+    const authenticate777 = () => {
+        const passwordInput777 = document.getElementById('adminPassword777').value.trim();
+        if (passwordInput777 === adminPassword777) {
+            isAdmin777 = true;
+            document.querySelectorAll('.admin-actions777').forEach(el => el.style.display = 'block');
+            document.getElementById('authForm777').style.display = 'none';
+            document.getElementById('resetBtn777').style.display = 'block';
+            updateTable777();
+        } else {
+            alert('Mot de passe incorrect');
+        }
+    };
+
+    const updateTable777 = () => {
+        const tbody777 = document.getElementById('friendsList777');
+        const select777 = document.getElementById('selectFriend777');
+
+        tbody777.innerHTML = '';
+        select777.innerHTML = '';
+
+        friends777.sort((a, b) => b.points - a.points || a.name.localeCompare(b.name));
+
+        friends777.forEach((friend, index) => {
+            const row = tbody777.insertRow();
+            row.insertCell(0).textContent = `${index + 1}`;
+            row.insertCell(1).textContent = friend.name;
+            row.insertCell(2).textContent = friend.points;
+
+            const jetonsCell777 = row.insertCell(3);
+            jetonsCell777.innerHTML = '';
+            const verts777 = Math.floor(friend.points / 3);
+            const jaunes777 = Math.floor((friend.points % 3) / 2);
+            const bleus777 = friend.points % 3 % 2;
+
+            for (let i = 0; i < verts777; i++) jetonsCell777.innerHTML += `<span class="jeton777 vert777"></span>`;
+            for (let i = 0; i < jaunes777; i++) jetonsCell777.innerHTML += `<span class="jeton777 jaune777"></span>`;
+            for (let i = 0; i < bleus777; i++) jetonsCell777.innerHTML += `<span class="jeton777 bleu777"></span>`;
+
+            const actionsCell777 = row.insertCell(4);
+            actionsCell777.classList.add('admin-actions777');
+            if (isAdmin777) {
+                actionsCell777.innerHTML = `
+                    <button onclick="addPoint777('${friend.name}')">+1</button>
+                    <button onclick="removePoint777('${friend.name}')">-1</button>
+                `;
+            }
+
+            const option777 = document.createElement('option');
+            option777.value = friend.name;
+            option777.textContent = friend.name;
+            select777.appendChild(option777);
+        });
+    };
+
+    const addPoint777 = (name) => {
+        const friend777 = friends777.find(f => f.name === name);
+        if (friend777) {
+            friend777.points++;
+            saveData777();
+            updateTable777();
+        }
+    };
+
+    const removePoint777 = (name) => {
+        const friend777 = friends777.find(f => f.name === name);
+        if (friend777 && friend777.points > 0) {
+            friend777.points--;
+            saveData777();
+            updateTable777();
+        }
+    };
+
+    const addPoints777 = () => {
+        const selectedFriend777 = document.getElementById('selectFriend777').value;
+        const points777 = parseInt(document.getElementById('pointsInput777').value);
+
+        if (!selectedFriend777 || isNaN(points777) || points777 < 0) {
+            alert('Veuillez entrer un nombre de points valide.');
+            return;
+        }
+
+        const friend777 = friends777.find(f => f.name === selectedFriend777);
+        if (friend777) {
+            friend777.points += points777;
+            saveData777();
+            updateTable777();
+            alert(`Les points ont été ajoutés pour ${friend777.name}.`);
+        }
+    };
+
+    const removePoints777 = () => {
+        const selectedFriend777 = document.getElementById('selectFriend777').value;
+        const points777 = parseInt(document.getElementById('pointsInput777').value);
+
+        if (!selectedFriend777 || isNaN(points777) || points777 < 0) {
+            alert('Veuillez entrer un nombre de points valide.');
+            return;
+        }
+
+        const friend777 = friends777.find(f => f.name === selectedFriend777);
+        if (friend777) {
+            friend777.points = Math.max(0, friend777.points - points777);
+            saveData777();
+            updateTable777();
+            alert(`Les points ont été retirés pour ${friend777.name}.`);
+        }
+    };
+
+    updateTable777();
+</script>
+
+
+<!--  Barrière limitation fin classement   -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+<!-- le main est sacré ! -->
+
+
+
+  <script>
+    const citations77 = JSON.parse(localStorage.getItem('citations77')) || [];
+    const defis77 = JSON.parse(localStorage.getItem('defis77')) || [];
+    const descriptions77 = JSON.parse(localStorage.getItem('descriptions77')) || [];
+    const loginForm77 = document.getElementById("login-form77");
+    const adminPanel77 = document.getElementById("admin-panel77");
+
+    function displayItems77() {
+      citationsList77.innerHTML = "";
+      defisList77.innerHTML = "";
+      descriptionList77.innerHTML = "";
+
+      citations77.forEach((item, index) => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <span style="color: ${item.color};">${item.content}</span>
+          <button class="delete ${!isAdmin77 ? 'disabled' : ''}" 
+                  onclick="${isAdmin77 ? `deleteItem77('citation', ${index})` : 'return false;'}" 
+                  title="${isAdmin77 ? 'Supprimer' : 'Non autorisé'}">
+            🗑️
+          </button>
+        `;
+        citationsList77.appendChild(li);
+      });
+
+      defis77.forEach((item, index) => {
+        const timeRemaining = Math.max(0, new Date(item.endDate) - new Date());
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <span style="color: ${item.color};">${item.content}</span>
+          <div class="time-display">
+            🕒 <span>${days}j ${hours}h ${minutes}m ${seconds}s</span>
+          </div>
+          <button class="delete ${!isAdmin77 ? 'disabled' : ''}" 
+                  onclick="${isAdmin77 ? `deleteItem77('defi', ${index})` : 'return false;'}" 
+                  title="${isAdmin77 ? 'Supprimer' : 'Non autorisé'}">
+            🗑️
+          </button>
+        `;
+        defisList77.appendChild(li);
+      });
+
+      descriptions77.forEach((desc, index) => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+          <span>${desc}</span>
+          <button class="delete ${!isAdmin77 ? 'disabled' : ''}" 
+                  onclick="${isAdmin77 ? `deleteItem77('description', ${index})` : 'return false;'}" 
+                  title="${isAdmin77 ? 'Supprimer' : 'Non autorisé'}">
+            🗑️
+          </button>
+        `;
+        descriptionList77.appendChild(li);
+      });
+    }
+
+    function deleteItem77(type, index) {
+      if (type === "citation") citations77.splice(index, 1);
+      else if (type === "defi") defis77.splice(index, 1);
+      else if (type === "description") descriptions77.splice(index, 1);
+      saveData77();
+      displayItems77();
+    }
+
+    function saveData77() {
+      localStorage.setItem('citations77', JSON.stringify(citations77));
+      localStorage.setItem('defis77', JSON.stringify(defis77));
+      localStorage.setItem('descriptions77', JSON.stringify(descriptions77));
+    }
+
+    loginForm77.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const username77 = document.getElementById("username77").value;
+      const password77 = document.getElementById("password77").value;
+      if (username77 === "admin" && password77 === "fépetdoro") {
+        loginForm77.classList.add("hidden");
+        adminPanel77.classList.remove("hidden");
+        isAdmin77 = true;
+        displayItems77();
+      } else {
+        alert("Identifiants incorrects !");
+      }
+    });
+
+    document.getElementById("add-item-form77").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const type77 = document.getElementById("type77").value;
+      const content77 = document.getElementById("content77").value;
+      const color77 = document.getElementById("color77").value;
+      const endDate77 = document.getElementById("date77").value;
+
+      if (type77 === "citation") citations77.push({ content: content77, color: color77 });
+      else defis77.push({ content: content77, color: color77, endDate: endDate77 });
+
+      saveData77();
+      displayItems77();
+      e.target.reset();
+    });
+
+    document.getElementById("add-description-form77").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const descriptionContent77 = document.getElementById("description-content77").value;
+      descriptions77.push(descriptionContent77);
+      saveData77();
+      displayItems77();
+      e.target.reset();
+    });
+
+    setInterval(displayItems77, 1000);
+    displayItems77();
+  </script>
+
+
+<!--  Barrière limitation citation défit  -->
+
+
+
+
+    <!-- Message de bienvenue -->
+    <section id="welcome-card99">
+        <h1>Culture réuionnais pendant période des fêtes ! </h1>
+        <p>
+            Nous sommes dans le mois préféré des enfants et des adultes ! Mois des fêtes et religieux, 
+            célébrons ensemble ce beau moment, même à distance ! 
+
+            <p>Voici une série d'articles sur les cultures que je publierai chaque jour, du 1er au 25 décembre, 
+            mettant en lumière les traditions réunionnaises et les festivités à La Réunion.</p>
+            
+            <strong>Joyeux Noël !</strong>
+        </p>
+    </section>
+
+    <!-- Section des événements -->
+    <section id="events99">
+        <div class="event-card99">
+            <img src="/images/Flamboyant.jpg">
+            <div class="description99">
+                <h2>Le 1er Décembre Lance les Fêtes et Traditions Culturelles</h2>
+                <p>
+                    Le 1ᵉʳ décembre à La Réunion marque le début d'une période festive mêlant traditions culturelles, préparatifs culinaires, marchés de Noël, illuminations et célébrations religieuses comme l'Avent catholique et les marches sur le feu tamoules. 
+                    <p></p>C'est un moment où le métissage réunionnais s'exprime pleinement dans la convivialité et la spiritualité.</p>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="events99">
+        <div class="event-card99">
+            <img src="/images/Île de La Réunion.jpg" alt="Fèt Kaf">
+            <div class="description99">
+                <h2>Le 20 décembre - Fèt Kaf </h2>
+                <p>
+                    Le 20 décembre ou la « Fèt Kaf » est un jour férié à La Réunion, 
+                    en commémoration de l’abolition de l’esclavage survenue le 20 décembre 1848.
+                    
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script pour générer les confettis -->
+    <script>
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti99');
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 60%)`;
+            confetti.style.animationDuration = Math.random() * 2 + 3 + 's';
+
+            document.getElementById('confetti-container99').appendChild(confetti);
+
+            setTimeout(() => {
+                confetti.remove();
+            }, 5000);
+        }
+
+        setInterval(createConfetti, 200);
+    </script>
+
+
+
+<script>
+
+        const apiBaseUrl = "http://localhost:3000"; // Changez par l'URL de votre serveur si hébergé
+
+        // DOM Elements pour les citations, défis et descriptions
+        const citationsList77 = document.getElementById("citations-list77");
+        const defisList77 = document.getElementById("defis-list77");
+        const descriptionList77 = document.getElementById("description-list77");
+        const isAdmin77 = false; // Changez selon votre logique
+
+        // Afficher les données depuis l'API
+        function displayItems77() {
+            citationsList77.innerHTML = "";
+            defisList77.innerHTML = "";
+            descriptionList77.innerHTML = "";
+
+            fetch(`${apiBaseUrl}/api/citations`)
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach((item, index) => {
+                        const li = document.createElement("li");
+                        li.innerHTML = `<span style="color: ${item.color};">${item.content}</span>
+                        ${isAdmin77 ? `<button onclick="deleteItem77('citations', ${index})">🗑️</button>` : ""}`;
+                        citationsList77.appendChild(li);
+                    });
+                });
+
+            fetch(`${apiBaseUrl}/api/defis`)
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach((item, index) => {
+                        const li = document.createElement("li");
+                        li.innerHTML = `<span style="color: ${item.color};">${item.content}</span>
+                        <span>${item.endDate}</span>
+                        ${isAdmin77 ? `<button onclick="deleteItem77('defis', ${index})">🗑️</button>` : ""}`;
+                        defisList77.appendChild(li);
+                    });
+                });
+
+            fetch(`${apiBaseUrl}/api/descriptions`)
+                .then(response => response.json())
+                .then(data => {
+                    data.forEach((item, index) => {
+                        const li = document.createElement("li");
+                        li.innerHTML = `<span>${item}</span>
+                        ${isAdmin77 ? `<button onclick="deleteItem77('descriptions', ${index})">🗑️</button>` : ""}`;
+                        descriptionList77.appendChild(li);
+                    });
+                });
+        }
+
+        // Ajouter un élément via formulaire
+        function addItem77(type, content, color, endDate = null) {
+            const endpoint = type === "citation" ? "citations" : "defis";
+            fetch(`${apiBaseUrl}/api/${endpoint}`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ content, color, endDate }),
+            }).then(() => displayItems77());
+        }
+
+        // Supprimer un élément
+        function deleteItem77(type, index) {
+            fetch(`${apiBaseUrl}/api/${type}/${index}`, { method: "DELETE" })
+                .then(() => displayItems77());
+        }
+
+        displayItems77();
+        </script>
+
+        <!-- Script pour le classement -->
+        <script>
+        // DOM Elements pour le classement
+        const friendsTable = document.getElementById("friendsList777");
+        const selectFriend = document.getElementById("selectFriend777");
+
+        function deleteItem77(type, index) {
+    fetch(`${apiBaseUrl}/api/${type}/${index}`, { method: "DELETE" })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erreur lors de la suppression');
+            }
+            return response.json();
+        })
+        .then(() => {
+            console.log(`${type} supprimé avec succès`);
+            displayItems77(); // Rafraîchir l'affichage
+        })
+        .catch(error => console.error('Erreur :', error));
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
